@@ -5,7 +5,9 @@ CONFIG -= qt
 
 SOURCES += \
         main.cpp \
-    pagina.cpp
+    pagina.cpp \
+    arbolb.cpp
 
 HEADERS += \
-    pagina.h
+    pagina.h \
+    arbolb.h

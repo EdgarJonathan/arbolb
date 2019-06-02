@@ -26,14 +26,14 @@ public:
     bool nodoSemiVacio();
 
     //obtener la clave que ocupa la posicion i en el array de claves
-    tipoClave Oclave(int i);
+    tipoClave getClave(int i);
     //cambiar la clave que ocupa la posicion i en el array de claves
-    void Pclave(int i, tipoClave clave);
+    void setClave(int i, tipoClave clave);
 
     //obtener la rama que ocupa la posicion i en el array de ramas
-    Pagina* Orama(int i );
+    Pagina* getRama(int i );
     //cambiar la rama que ocupa la posicion i en el array de ramas
-    void Prama(int i , Pagina* p);
+    void setRama(int i , Pagina* p);
 
 
     int getCuenta() const;

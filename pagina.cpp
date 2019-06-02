@@ -8,7 +8,6 @@ Pagina::Pagina(int orden)
     for (int k=0;k<=orden;k++) {
         ramas[k]=nullptr;
     }
-
 }
 
 bool Pagina::nodoLLeno()
@@ -21,22 +20,22 @@ bool Pagina::nodoSemiVacio()
     return (cuenta<m/2);
 }
 
-tipoClave Pagina::Oclave(int i)
+tipoClave Pagina::getClave(int i)
 {
     return claves[i];
 }
 
-void Pagina::Pclave(int i, tipoClave clave)
+void Pagina::setClave(int i, tipoClave clave)
 {
     claves[i]=clave;
 }
 
-Pagina* Pagina::Orama(int i)
+Pagina* Pagina::getRama(int i)
 {
     return  ramas[i];
 }
 
-void Pagina::Prama(int i, Pagina *p)
+void Pagina::setRama(int i, Pagina *p)
 {
     ramas[i] =p;
 }
